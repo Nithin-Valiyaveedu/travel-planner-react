@@ -34,7 +34,7 @@ const List = () => {
   return (
     <div className={classes.container}>
       <Typography variant="h4">
-        Plan Your Journey with these results{" "}
+        Plan Your Journey!{" "}
       </Typography>
       <FormControl className={classes.formControl}>
         <InputLabel>Type</InputLabel>
@@ -54,7 +54,7 @@ const List = () => {
         </Select>
       </FormControl>
 
-      <Grid container spacing={3} className={classes.list}>
+      <Grid container spacing={2} className={classes.list}>
         {places?.map((place, i) => (
           <Grid item key={i} xs={12}>
               <PlaceDetails place={place}/>
